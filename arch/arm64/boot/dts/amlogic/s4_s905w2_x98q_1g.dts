@@ -1,0 +1,16 @@
+#include "s4_s905w2_ap201_1g.dts"
+#include "coreelec_s4_common.dtsi"
+
+/ {
+	model = "Amediatech X98Q";
+	coreelec-dt-id = "s4_s905w2_x98q";
+};
+
+&uart_B {
+	status = "okay";
+};
+
+&sd_emmc_b {
+	cd-gpios = <&gpio GPIOC_6 GPIO_ACTIVE_LOW>;
+};
+
